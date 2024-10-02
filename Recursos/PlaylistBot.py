@@ -9,13 +9,22 @@
         
 #    return self.listamusica
 
-def listamusica(cancion):
-    lis=[]
-    lis=lis.append(cancion)
-    print(f"dentro del metodo la lista va asi {lis}")
+#def listamusica(cancion,lis=None):
+#    if lis is None:
+#        lis=[]
+#        auxlis=lis.append(cancion)
+#    else:
+#        auxlis=lis.append(cancion)
+#        print(f"dentro del metodo la lista va asi {auxlis}")
         
-    return lis
+#    return auxlis
 
+def listamusica(cancion,listamusica=None):
+    if listamusica is None:
+        listamusica = []
+    listamusica.append(cancion)
+    print (f"dentro del metodo la lista va asi {listamusica}")
+    return listamusica
 
 
 

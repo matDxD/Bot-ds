@@ -48,7 +48,8 @@ def mplay(bot):
                         if channel.guild.voice_client and channel.guild.voice_client.is_connected():
                             print(f" la canción que se añadirá a la lista es: {song}")
                             lis = listamusica(song)  # Aseguramos que song tiene valor
-                            print(f"La lista va así: {lis}")
+                            print(f" la lista va asi: \n")
+                            print(' '.join(lis))
                         else:
                          
                             await channel.connect()  # El bot se conecta al canal de voz
